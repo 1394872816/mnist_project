@@ -14,36 +14,6 @@
   - 混淆矩阵
 - **模块化设计**: 代码结构清晰，易于维护和扩展
 
-## 项目结构
-mnist_project/
-│
-├── dataset/
-│   ├── t10k-images-idx3-ubyte.gz
-│   ├── t10k-labels-idx1-ubyte.gz
-│   ├── train-images-idx3-ubyte.gz
-│   └── train-labels-idx1-ubyte.gz
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py
-│   ├── model.py
-│   ├── trainer.py
-│   ├── visualizer.py
-│   └── device_monitor.py
-│
-├── outputs/
-│   ├── models/
-│   │   └── mnist_cnn.pth
-│   └── figures/
-│       ├── training_curves.png
-│       ├── predictions.png
-│       └── confusion_matrix.png
-│
-├── main.py
-├── config.py
-├── requirements.txt
-└── README.md
-
 ## 环境要求
 
 - Python 3.8+
