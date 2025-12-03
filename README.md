@@ -17,31 +17,32 @@
 ## 项目结构
 mnist_project/
 │
-├── dataset/ # 数据集目录
-│ ├── t10k-images-idx3-ubyte.gz # 测试图像 (10,000张)
-│ ├── t10k-labels-idx1-ubyte.gz # 测试标签
-│ ├── train-images-idx3-ubyte.gz # 训练图像 (60,000张)
-│ └── train-labels-idx1-ubyte.gz # 训练标签
+├── dataset/
+│   ├── t10k-images-idx3-ubyte.gz
+│   ├── t10k-labels-idx1-ubyte.gz
+│   ├── train-images-idx3-ubyte.gz
+│   └── train-labels-idx1-ubyte.gz
 │
-├── src/ # 源代码目录
-│ ├── init.py # 包初始化文件
-│ ├── data_loader.py # 数据加载模块
-│ ├── model.py # CNN模型定义
-│ ├── trainer.py # 训练模块
-│ ├── visualizer.py # 可视化模块
-│ └── device_monitor.py # GPU/CPU监控模块
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── model.py
+│   ├── trainer.py
+│   ├── visualizer.py
+│   └── device_monitor.py
 │
-├── outputs/ # 输出目录
-│ ├── models/ # 保存的模型
-│ │ └── mnist_cnn.pth
-│ └── figures/ # 生成的图表
-│ ├── training_curves.png
-│ ├── predictions.png
-│ └── confusion_matrix.png
+├── outputs/
+│   ├── models/
+│   │   └── mnist_cnn.pth
+│   └── figures/
+│       ├── training_curves.png
+│       ├── predictions.png
+│       └── confusion_matrix.png
 │
-├── main.py # 主程序入口
-├── config.py # 配置文件
-├── requirements.txt # 依赖包列表
+├── main.py
+├── config.py
+├── requirements.txt
+└── README.md
 
 ## 环境要求
 
