@@ -1,0 +1,60 @@
+# MNIST 手写数字识别项目
+
+基于 PyTorch 的 CNN 手写数字识别项目，支持实时 GPU 监控和训练可视化。
+
+## 项目特点
+
+- **CNN模型**: 自定义设计的卷积神经网络，用于数字分类
+- **实时监控**: 训练过程中实时显示 GPU/CPU 使用情况
+- **进度条显示**: 使用 tqdm 显示训练进度
+- **可视化功能**: 
+  - 训练/测试损失曲线
+  - 测试准确率曲线
+  - 预测结果网格图（绿色=正确，红色=错误）
+  - 混淆矩阵
+- **模块化设计**: 代码结构清晰，易于维护和扩展
+
+## 项目结构
+mnist_project/
+│
+├── dataset/ # 数据集目录
+│ ├── t10k-images-idx3-ubyte.gz # 测试图像 (10,000张)
+│ ├── t10k-labels-idx1-ubyte.gz # 测试标签
+│ ├── train-images-idx3-ubyte.gz # 训练图像 (60,000张)
+│ └── train-labels-idx1-ubyte.gz # 训练标签
+│
+├── src/ # 源代码目录
+│ ├── init.py # 包初始化文件
+│ ├── data_loader.py # 数据加载模块
+│ ├── model.py # CNN模型定义
+│ ├── trainer.py # 训练模块
+│ ├── visualizer.py # 可视化模块
+│ └── device_monitor.py # GPU/CPU监控模块
+│
+├── outputs/ # 输出目录
+│ ├── models/ # 保存的模型
+│ │ └── mnist_cnn.pth
+│ └── figures/ # 生成的图表
+│ ├── training_curves.png
+│ ├── predictions.png
+│ └── confusion_matrix.png
+│
+├── main.py # 主程序入口
+├── config.py # 配置文件
+├── requirements.txt # 依赖包列表
+
+## 环境要求
+
+- Python 3.8+
+- PyTorch 1.9+
+- CUDA 11.0+（可选，用于GPU加速）
+
+### 依赖包
+torch>=1.9.0
+numpy>=1.19.0
+matplotlib>=3.3.0
+tqdm>=4.60.0
+seaborn>=0.11.0
+scikit-learn>=0.24.0
+pynvml>=11.0.0
+psutil>=5.8.0
