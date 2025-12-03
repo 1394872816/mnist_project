@@ -21,11 +21,11 @@
 - CUDA 11.0+（可选，用于GPU加速）
 
 ### 依赖包
--torch>=1.9.0
--numpy>=1.19.0
--matplotlib>=3.3.0
--tqdm>=4.60.0
--seaborn>=0.11.0
--scikit-learn>=0.24.0
--pynvml>=11.0.0
--psutil>=5.8.0
+- torch>=1.9.0
+- numpy>=1.19.0
+- matplotlib>=3.3.0
+- tqdm>=4.60.0
+- seaborn>=0.11.0
+- scikit-learn>=0.24.0
+- pynvml>=11.0.0
+- psutil>=5.8.0
